@@ -1,0 +1,65 @@
+Анкета схожа на зразок
+Файл: anketa.html
+
+HTML
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Анкета</h1>
+    <form action="submit.php" method="post">
+      <div class="form-group">
+        <label for="surname">Прізвище:</label>
+        <input type="text" id="surname" name="surname" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Ім'я, по батькові:</label>
+        <input type="text" id="name" name="name" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Домашня адреса:</label>
+        <input type="text" id="address" name="address" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="workplace">Місце навчання (роботи):</label>
+        <input type="text" id="workplace" name="workplace" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Домашній (робочий) телефон:</label>
+        <input type="tel" id="phone" name="phone" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="interests">Область наукових інтересів:</label>
+        <br>
+        <input type="checkbox" id="interest1" name="interests[]" value="interest1" class="form-check-input">
+        <label for="interest1" class="form-check-label">Інтерес 1</label><br>
+        <input type="checkbox" id="interest2" name="interests[]" value="interest2" class="form-check-input">
+        <label for="interest2" class="form-check-label">Інтерес 2</label><br>
+        <input type="checkbox" id="interest3" name="interests[]" value="interest3" class="form-check-input">
+        <label for="interest3" class="form-check-label">Інтерес 3</label><br>
+        <input type="checkbox" id="interest4" name="interests[]" value="interest4" class="form-check-input">
+        <label for="interest4" class="form-check-label">Інтерес 4</label><br>
+        <input type="checkbox" id="interest5" name="interests[]" value="interest5" class="form-check-input">
+        <label for="interest5" class="form-check-label">Інтерес 5</label><br>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Надіслати дані та перейти до 2 етапу реєстрації" class="btn btn-primary">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
